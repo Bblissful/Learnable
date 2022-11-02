@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flixia</title>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Top menu-->
+        <div class="sidebar">
+            <!--profile image-->
+            <div class="profile">
+                <img src="images/profile.jpeg" alt="icon" class="profile">
+                <h4>Login</h4>
+            </div>
+            <!--menu item-->
+            <ul>
+                <li><a href="#" class="active">
+                        <img src="images/home.png" alt="home">
+                        <span class="item">HOME</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="images/movie.png" alt="movie">
+                        <span class="item">MOVIES</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="images/movie.png" alt="movie">
+                        <span class="item">TV SHOWS</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="images/music.jpeg" alt="audio">
+                        <span class="item">AUDIO</span>
+                    </a></li>
+                <li><a href="#">
+                        <img src="images/video.png" alt="video">
+                        <span class="item" id="video">MUSIC VIDEOS</span>
+                    </a></li>
+                <li><a href="#">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">SETTINGS</span>
+                    </a></li>
+            </ul>
+        </div>
+        <!--top menu bar-->
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <img src="images/sidebar.png" alt="home" class="sidebarimg">
+                </div>
+                <div style="text-align:right">
+                    <img src="images/search (2).jpeg" alt="search">
+                    <strong style="color:rgb(12, 11, 8); font-size: small;">MOVIES</strong>
+
+                    <strong style="color:rgb(12, 11, 8); font-size: small;">MUSIC</strong>
+
+                    <strong style="color:rgb(7, 7, 5); font-size: small;">TV SHOWS</strong>
+                </div>
+            </div>
+
+            <!--Now active menu button using javascript-->
+            <script>
+                var hamburger = document.querySelector(".hamburger");
+                hamburger.addEventListener("click", function () {
+                    document.querySelector("body").classList.toggle("active")
+                })
+            </script>
+
+
+            <div class="menu">
+                <header>
+                    <img src="images/flixia.PNG" alt="flixia logo" class="logo"><strong>.COM</strong>
+                    <p>Home of entertainment</p>
+
+                </header>
+                <hr>
+                <main>
+                    <section>
+                        <h1>SIGN UP</h1>
+                        <form action="https://register-demo.learnable.com">
+                            <fieldset>
+                                <label>Enter your first name:
+                                    <input type="text" required name="firstname">
+                                </label>
+                                <label>Enter your last name:
+                                    <input type="text" required name="lastname">
+                                </label>
+                                <label>Enter your email:
+                                    <input type="email" required name="email">
+                                </label>
+                                <label>Create a new password:
+                                    <input type="password" required minlength="8" pattern="[a-z0-5]{8,}"
+                                        name="password">
+                                </label>
+                                <h5 style="text-align: center;">already have an account? Log in</h5>
+                                <input type="submit" value="Submit">
+                            </fieldset>
+
+
+                            <FOOTER>
+                                <h6>About us</h6>
+                                <h6>Contact Support</h6>
+                                <h6>Advertise</h6>
+                                <h6>Blog</h6>
+                            </FOOTER>
+
+                    </section>
+                </main>
+            </div>
+</body>
+
+</html>
